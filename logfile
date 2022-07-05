@@ -1,0 +1,1234 @@
+16:18:41.445407 Node 0: port no: [::]:51121
+16:18:41.459469 Node 1: port no: [::]:51122
+16:18:41.473100 Node 2: port no: [::]:51123
+16:18:41.491670 Node 3: port no: [::]:51124
+16:18:41.504045 Node 4: port no: [::]:51125
+16:18:41.515617 Node 2:  Election timer for term=0 and timeout=177ms
+16:18:41.515617 Node 3:  Election timer for term=0 and timeout=184ms
+16:18:41.515617 Node 4:  Election timer for term=0 and timeout=207ms
+16:18:41.515617 Node 0:  Election timer for term=0 and timeout=229ms
+16:18:41.515617 Node 1:  Election timer for term=0 and timeout=252ms
+16:18:41.700488 Node 2:  is now a CandidateNode with current Term=1 and log=[]
+16:18:41.700488 Node 2:  Election timer for term=1 and timeout=276ms
+16:18:41.700488 Node 3:  is now a CandidateNode with current Term=1 and log=[]
+16:18:41.700488 Node 2:  RequestVote sent to node 1: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.700488 Node 2:  RequestVote sent to node 3: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.700488 Node 3:  RequestVote sent to node 4: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.700488 Node 2:  RequestVote sent to node 4: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.700488 Node 2:  RequestVote sent to node 0: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.700488 Node 3:  RequestVote sent to node 0: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.700488 Node 3:  Election timer for term=1 and timeout=193ms
+16:18:41.700488 Node 3:  RequestVote sent to node 2: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.700488 Node 3:  RequestVote sent to node 1: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1}
+16:18:41.715561 Node 2:  RequestVote: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=1, last log entry (index/term)=(-1, -1), votedFor=2}
+16:18:41.715561 Node 1:  RequestVote: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=0, last log entry (index/term)=(-1, -1), votedFor=-1}
+16:18:41.716112 Node 1:  RequestVote received outdated term
+16:18:41.715561 Node 3:  RequestVote: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=1, last log entry (index/term)=(-1, -1), votedFor=3}
+16:18:41.715561 Node 0:  RequestVote: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=0, last log entry (index/term)=(-1, -1), votedFor=-1}
+16:18:41.716136 Node 0:  RequestVote received outdated term
+16:18:41.715561 Node 4:  RequestVote: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=0, last log entry (index/term)=(-1, -1), votedFor=-1}
+16:18:41.716136 Node 4:  RequestVote received outdated term
+16:18:41.716136 Node 1:  is now a follower with term=1 and log=[]
+16:18:41.716136 Node 0:  is now a follower with term=1 and log=[]
+16:18:41.716136 Node 4:  is now a follower with term=1 and log=[]
+16:18:41.717866 Node 3:  RequestVote reply Term: 1, VoteGranted: false
+16:18:41.717927 Node 2:  RequestVote reply Term: 1, VoteGranted: false
+16:18:41.718474 Node 2:  RequestVoteReply {Term:1 VoteGranted:false}
+16:18:41.718615 Node 3:  RequestVoteReply {Term:1 VoteGranted:false}
+16:18:41.718615 Node 1:  RequestVote reply Term: 1, VoteGranted: true
+16:18:41.718615 Node 1:  Term changed: 0 -> 1
+16:18:41.719160 Node 4:  RequestVote reply Term: 1, VoteGranted: true
+16:18:41.719160 Node 1:  RequestVote: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=1, last log entry (index/term)=(-1, -1), votedFor=2}
+16:18:41.719318 Node 4:  RequestVote: {Term:1 CandidateNodeId:3 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=1, last log entry (index/term)=(-1, -1), votedFor=2}
+16:18:41.719318 Node 2:  RequestVoteReply {Term:1 VoteGranted:true}
+16:18:41.719873 Node 2:  RequestVoteReply {Term:1 VoteGranted:true}
+16:18:41.719873 Node 2:  wins election with votes = 3
+16:18:41.719873 Node 0:  RequestVote reply Term: 1, VoteGranted: true
+16:18:41.719873 Node 2:  is now a LeaderNode with term=1, nextIndex=map[0:0 1:0 3:0 4:0], matchIndex=map[0:-1 1:-1 3:-1 4:-1]; log=[]
+16:18:41.720069 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.720069 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.720069 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.720069 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.720069 Node 0:  RequestVote: {Term:1 CandidateNodeId:2 LastLogIndex:-1 LastLogTerm:-1} {currentTerm=1, last log entry (index/term)=(-1, -1), votedFor=3}
+16:18:41.720619 Node 3:  RequestVoteReply {Term:1 VoteGranted:true}
+16:18:41.721172 Node 2:  Current state = LeaderNode
+16:18:41.731515 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.731515 Node 3:  is now a follower with term=1 and log=[]
+16:18:41.733849 Node 1:  RequestVote reply Term: 1, VoteGranted: false
+16:18:41.733849 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.733849 Node 3:  Election timer for term=1 and timeout=235ms
+16:18:41.734377 Node 1:  Election timer for term=1 and timeout=271ms
+16:18:41.734377 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.734478 Node 4:  RequestVote reply Term: 1, VoteGranted: false
+16:18:41.734478 Node 4:  Term changed: 0 -> 1
+16:18:41.734478 Node 4:  Election timer for term=1 and timeout=247ms
+16:18:41.734478 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.735373 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.735401 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.735401 Node 3:  RequestVoteReply {Term:1 VoteGranted:false}
+16:18:41.735401 Node 3:  Waiting for reply, state = FollowerNode
+16:18:41.735401 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.735790 Node 3:  RequestVoteReply {Term:1 VoteGranted:false}
+16:18:41.735790 Node 3:  Waiting for reply, state = FollowerNode
+16:18:41.737414 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.737414 Node 0:  RequestVote reply Term: 1, VoteGranted: false
+16:18:41.738029 Node 0:  Term changed: 0 -> 1
+16:18:41.738029 Node 0:  Election timer for term=1 and timeout=206ms
+16:18:41.738029 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.738029 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.738029 Node 2:  RequestVoteReply {Term:1 VoteGranted:false}
+16:18:41.738029 Node 2:  Waiting for reply, state = LeaderNode
+16:18:41.738604 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.739176 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.774433 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.774433 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.774433 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.774433 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.794828 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.794828 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.795363 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.795363 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.796556 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.796556 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.797341 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.797897 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.798032 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.798032 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.798032 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.798597 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.836877 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.836877 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.836877 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.836928 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.857395 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.857395 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.857812 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.857395 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.859636 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.859636 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.860172 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.860259 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.860259 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.860259 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.860259 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.860259 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.889052 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.889052 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.889052 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.889052 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.909937 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.910337 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.910337 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.910337 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.911450 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.911571 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.912156 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.912156 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.912156 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.912734 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.912734 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.912734 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.951224 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.951224 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.951224 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.951224 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.972155 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.972155 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.972155 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.972155 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:41.974570 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.974570 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.974570 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.975098 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.975161 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.975161 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:41.975161 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:41.975161 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.012466 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.012466 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.012466 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.012466 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.029677 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.029677 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.029677 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.029677 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.031564 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.031564 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.032161 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.032161 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.032161 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.032687 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.032723 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.032723 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.065711 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.065711 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.065711 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.065711 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.081762 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.081762 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.081762 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.081762 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.083825 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.084116 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.084116 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.084648 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.084705 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.084705 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.084705 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.085065 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.123223 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.123223 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.123223 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.123223 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.143965 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.143965 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.143965 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.143965 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.145979 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.145979 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.146538 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.146538 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.146538 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.146538 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.146538 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.147123 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.185319 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.185319 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.185319 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.185319 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.206061 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.206061 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.206061 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.206061 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.208367 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.208443 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.208443 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.208443 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.208443 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.208968 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.208999 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.208999 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.247762 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.247762 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.247812 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.247812 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.262549 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.262549 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.262549 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.262549 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.264323 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.264323 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.264323 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.264963 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.264963 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.264963 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.264963 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.264963 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.299707 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.299707 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.299707 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.299707 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.318249 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.318249 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.318249 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.318249 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.318249 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.318249 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.318249 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.318249 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.318249 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.320859 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.320859 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.320859 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.351842 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.351842 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.351842 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.351842 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.369745 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.369745 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.369745 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.369745 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.369745 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.369745 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.369745 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.369745 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.372424 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.372424 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.372424 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.372424 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.411408 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.411408 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.411408 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.411408 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.432006 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.432006 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.432006 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.432006 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.432006 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.434101 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.434101 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.434101 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.434101 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.434101 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.434101 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.434101 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.474160 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.474160 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.474160 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.474160 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.495499 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.495499 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.495499 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.495499 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.496062 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.496062 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.496062 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.496062 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.496062 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.496062 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.496062 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.496062 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.534019 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.534019 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.534019 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.534019 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.557338 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.557338 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.557338 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.557862 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.557908 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.557908 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.557908 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.557908 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.557908 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.557908 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.557908 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.557908 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.598686 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.598686 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.598686 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.598686 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.618987 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.619214 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.619214 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.619214 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.619214 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.619214 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.619214 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.619214 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.619214 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.619214 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.619214 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.619214 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.650440 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.650440 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.650440 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.650440 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.671425 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.671425 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.671425 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.671425 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.671425 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.671425 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.671425 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.671425 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.671425 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.671425 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.671425 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.671425 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.713219 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.713219 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.713219 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.713219 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.734504 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.734504 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.734504 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.734504 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.734504 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.734504 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.734504 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.734504 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.734504 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.734504 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.734504 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.734504 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.776419 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.776419 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.776419 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.776419 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.797552 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.797552 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.797552 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.797552 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.797552 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.797552 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.797552 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.797552 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.797552 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.797552 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.797552 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.797552 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.834592 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.834592 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.834592 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.834592 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.860015 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.860252 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.860252 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.860252 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.860252 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.860252 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.860252 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.860252 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.860252 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.860252 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.860252 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.860252 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.901753 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.902043 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.902043 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.902043 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.922645 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.922645 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.922645 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.922645 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.922645 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.922645 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.922645 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.922645 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.922645 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.922645 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.922645 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.922645 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.964689 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.964689 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.964689 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.964689 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.985291 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.985291 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.985291 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.985291 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:42.985291 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.985291 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.985291 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.985291 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.985291 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.985291 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:42.985291 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:42.985291 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.027214 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.027214 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.027214 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.027214 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.048432 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.048432 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.048432 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.048432 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.048432 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.048432 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.048432 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.048432 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.048432 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.048432 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.048432 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.048432 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.089830 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.089830 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.089830 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.089830 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.111676 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.111676 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.111676 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.111676 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.111676 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.111676 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.111676 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.111676 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.111676 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.111676 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.111676 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.111676 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.152604 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.152604 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.152604 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.152604 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.173228 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.173228 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.173228 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.173228 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.173228 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.173228 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.173228 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.173228 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.173228 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.173228 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.173228 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.173228 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.214450 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.214450 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.214450 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.214450 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.234771 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.234771 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.234771 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.234771 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.235822 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.235822 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.235822 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.235822 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.235822 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.235822 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.235822 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.235822 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.275825 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.276151 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.276151 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.276151 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.297520 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.297520 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.297520 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.297520 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.299463 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.299463 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.299463 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.299463 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.300059 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.300692 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.300692 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.300692 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.336216 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.336216 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.336216 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.336216 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.361204 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.361335 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.361335 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.361335 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.362964 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.363523 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.363523 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.363523 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.364475 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.364475 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.364951 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.364951 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.402873 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.402873 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.402873 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.402873 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.423773 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.423773 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.423773 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.423773 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.425462 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.425634 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.425634 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.425634 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.426236 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.426236 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.426346 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.426346 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.465200 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.465200 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.465200 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.465200 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.486438 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.486438 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.486438 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.486438 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.488276 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.489381 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.489381 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.489381 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.489570 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.489570 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.489570 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.489570 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.528491 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.528491 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.528491 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.528491 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.549532 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.549532 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.549532 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.549532 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.551291 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.551291 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.551291 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.551291 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.551291 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.551902 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.551902 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.552532 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.591381 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.591381 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.591381 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.591381 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.612357 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.612357 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.612357 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.612357 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.614094 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.614233 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.614760 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.615053 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.615053 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.615634 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.615634 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.615634 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.654183 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.654183 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.654183 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.654183 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.674455 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.674720 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.674720 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.674720 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.676413 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.676584 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.676584 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.677139 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.677291 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.677291 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.677879 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.677879 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.711654 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.711654 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.711654 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.711654 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.732309 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.732309 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.732309 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.732309 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.733607 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.734261 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.735148 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.735148 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.735148 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.735875 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.735875 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.735875 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.774480 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.774480 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.774480 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.774480 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.795374 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.795374 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.795374 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.795374 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.797099 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.797644 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.797644 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.797888 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.798437 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.798437 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.799090 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.799090 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.836589 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.836589 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.836589 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.836589 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.857923 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.857923 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.857923 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.857923 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.859647 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.859647 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.860268 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.860268 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.860268 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.860268 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.860268 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.860824 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.899778 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.899778 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.899778 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.899778 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.920427 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.920501 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.920457 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.920501 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.921738 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.922284 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.922348 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.922902 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.923047 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.923047 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.923047 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.923047 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.954420 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.954420 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.954420 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.954420 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.973383 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.973383 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.973383 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.973383 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:43.973383 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.975445 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.975445 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.975445 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.975445 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.975445 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:43.975445 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:43.975445 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.015960 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.015960 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.015960 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.015960 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.036497 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.036497 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.036497 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.036497 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.037549 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.037549 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.037549 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.037549 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.037549 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.037549 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.037549 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.037549 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.078203 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.078203 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.078203 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.078203 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.098683 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.100170 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.100170 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.100170 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.100170 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.113143 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.115499 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.118127 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.118708 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.119409 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.120045 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.120045 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.129494 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.129494 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.129494 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.129494 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.154417 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.154417 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.154417 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.154417 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.156195 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.156753 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.156829 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.156829 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.156829 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.157400 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.157692 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.157811 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.185687 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.185687 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.185687 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.185687 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.206732 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.206732 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.206732 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.206732 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.207903 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.208961 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.209156 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.209156 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.209156 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.209156 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.209156 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.209156 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.248506 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.248506 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.248506 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.248506 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.269313 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.269313 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.269313 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.269313 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.275271 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.275271 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.275271 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.275271 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.275271 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.275271 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.275271 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.275271 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.310800 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.310800 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.310800 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.310800 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.321485 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.321485 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.321485 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.321485 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.321485 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.321485 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.321485 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.321485 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.321485 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.321485 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.321485 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.321485 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.372487 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.372487 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.372487 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.372487 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.393036 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.393036 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.393036 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.393036 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.393036 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.393036 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.393036 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.393036 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.393036 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.393036 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.393036 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.393036 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.434249 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.434249 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.434249 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.434249 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.455403 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.455403 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.455403 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.455403 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.455403 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.455403 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.455403 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.455403 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.455403 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.455403 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.455403 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.455403 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.496420 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.496420 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.496420 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.496420 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.517657 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.517657 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.517657 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.517657 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.517657 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.517657 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.517657 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.517657 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.517657 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.517657 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.517657 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.517657 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.558970 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.558970 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.558970 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.558970 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.579921 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.579921 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.579921 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.579921 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.579921 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.579921 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.579921 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.579921 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.579921 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.579921 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.579921 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.579921 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.621681 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.621681 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.621681 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.621681 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.638646 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.638646 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.638646 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.638646 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.638646 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.638646 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.638646 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.638646 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.638646 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.638646 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.638646 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.638646 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.684635 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.684635 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.684635 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.684635 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.705566 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.705566 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.705566 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.705566 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.705566 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.705566 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.705566 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.705566 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.705566 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.705566 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.705566 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.705566 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.747119 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.747119 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.747119 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.747119 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.767697 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.767697 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.767697 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.767697 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.767697 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.767697 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.767697 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.767697 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.767697 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.767697 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.767697 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.767697 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.809217 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.809217 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.809217 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.809217 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.829820 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.829820 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.829820 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.829820 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.829820 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.829820 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.829820 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.829820 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.829820 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.829820 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.829820 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.829820 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.870967 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.870967 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.870967 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.870967 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.891780 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.891780 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.891780 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.891780 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.891780 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.891780 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.891780 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.891780 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.891780 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.891780 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.891780 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.891780 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.932852 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.932852 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.932852 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.932852 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.953091 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.953522 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.953522 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.953522 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.953522 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.953522 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.953522 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.953522 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.953522 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.953522 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.953522 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:44.953522 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:44.995181 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.995181 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.995181 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:44.995181 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.015804 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.015804 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.015804 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.015804 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.015804 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.015804 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.015804 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.015804 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.015804 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.015804 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.015804 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.015804 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.057993 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.057993 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.057993 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.057993 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.078924 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.078924 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.078924 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.078924 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.078924 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.078924 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.078924 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.078924 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.078924 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.078924 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.078924 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.078924 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.120636 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.120840 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.120840 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.120840 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.140620 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.140620 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.140620 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.140620 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.141705 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.141705 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.141705 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.141705 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.141705 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.141705 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.141705 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.141705 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.183741 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.183741 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.183741 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.183741 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.204609 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.204609 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.204609 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.204609 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.204609 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.204609 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.204609 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.204609 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.204609 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.204609 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.204609 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.204609 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.241060 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.241060 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.241060 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.241060 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.256850 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.256850 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.256850 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.256850 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.257403 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.257403 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.257403 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.257403 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.257403 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.257403 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.257403 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.257403 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.298933 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.298933 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.298933 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.298933 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.319968 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.319999 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.319999 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.319999 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.319999 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.319999 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.319999 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.319999 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.319999 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.319999 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.319999 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.319999 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.362307 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.362307 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.362307 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.362307 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.383032 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.383286 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.383286 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.383286 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.383286 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.383286 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.383286 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.383286 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.383286 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.383286 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.383286 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.383286 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.424412 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.424412 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.425049 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.425049 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.441691 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.441691 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.441691 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.441691 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.441691 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.441691 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.441691 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.441691 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.441691 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.441691 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.445225 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.445225 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.476854 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.476854 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.476854 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.476854 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.498168 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.498168 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.498168 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.498168 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.498168 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.498168 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.498168 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.498168 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.498168 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.498168 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.498168 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.498168 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.539264 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.539264 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.539264 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.539264 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.561461 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.561461 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.561461 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.561461 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.561461 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.561461 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.561461 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.561461 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.561461 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.561461 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.561461 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.561461 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.602550 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.602550 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.602550 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.602550 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.623419 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.623419 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.623419 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.623419 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.623419 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.623419 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.623419 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.623419 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.623419 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.623419 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.623419 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.623419 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.660060 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.660060 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.660060 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.660060 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.680571 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.680571 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.681342 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.681342 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.681342 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.681342 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.681342 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.681342 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.681342 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.681342 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.681342 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.681342 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.722871 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.722871 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.722871 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.722871 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.743709 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.743709 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.743709 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.743709 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.743709 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.743709 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.743709 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.743709 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.743709 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.743709 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.743709 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.743709 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.785712 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.785712 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.785712 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.785712 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.806619 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.806619 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.806619 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.806619 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.806619 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.806619 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.806619 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.806619 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.806619 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.806619 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.806619 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.806619 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.843607 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.843607 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.843607 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.843607 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.868882 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.868882 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.868882 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.868882 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.868882 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.868882 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.868882 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.868882 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.868882 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.868882 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.868882 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.868882 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.910794 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.910794 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.910794 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.910794 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.931411 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.931411 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.931411 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.931411 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.931411 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.931411 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.931411 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.931411 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.931411 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.931411 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.931411 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.931411 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.973545 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.973545 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.973545 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.973545 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.994629 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.994629 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.994629 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.994629 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:45.994629 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.994629 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.994629 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.994629 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.994629 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.994629 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:45.994629 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:45.994629 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.036353 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.036353 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.036353 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.036353 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.057008 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.057317 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.057317 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.057317 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.057317 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.057317 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.057317 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.057317 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.057317 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.057317 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.057317 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.057317 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.097831 Node 2:  sent AppendEntries to 4: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.097831 Node 2:  sent AppendEntries to 1: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.097831 Node 2:  sent AppendEntries to 0: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.097831 Node 2:  sent AppendEntries to 3: ni=0, args={Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.118010 Node 3:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.118235 Node 1:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.118235 Node 0:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.118235 Node 4:  AppendEntries: {Term:1 LeaderNodeId:2 PrevLogIndex:-1 PrevLogTerm:-1 Entries:[] LeaderNodeCommit:-1}
+16:18:46.118235 Node 3:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.118235 Node 2:  AppendEntries reply from 3 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.120384 Node 1:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.121483 Node 2:  AppendEntries reply from 1 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.121483 Node 4:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.121483 Node 0:  AppendEntries reply: {Term:1 Success:true ConflictIndex:0 ConflictTerm:0}
+16:18:46.122571 Node 2:  AppendEntries reply from 0 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1
+16:18:46.122571 Node 2:  AppendEntries reply from 4 success: nextIndex := map[0:0 1:0 3:0 4:0], matchIndex := map[0:-1 1:-1 3:-1 4:-1]; commitIndex := -1

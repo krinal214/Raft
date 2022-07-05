@@ -1,0 +1,10 @@
+{
+ "CurrentTerm": 1,
+ "VotedFor": 4,
+ "Logs": [
+  {
+   "Command": 9,
+   "Term": 1
+  }
+ ]
+}
